@@ -13,7 +13,7 @@ const requestHandler = (req, res) => {
         res.write('<html>');
         res.write('<head><title>Enter Message</title></head>'); // Fix: Correct head tag
         res.write(
-            `<body><p>${data}</p><form action="/userName" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></body>`
+            `<body><p>${data}</p><form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></body>`
         );
         res.write('</html>');
         return res.end();
